@@ -21,7 +21,7 @@ const HeroBanner = ({ heroBanner }) => {
             <button type="button">{heroBanner.buttonText}</button>
           </Link>
           <div className="desc">
-            <h5>Descriptionasdasdasdasd!!!</h5>
+            <h5>Najbolji proizvodi, najbolja cena!!!</h5>
             <p>{heroBanner.desc}</p>
           </div>
         </div>

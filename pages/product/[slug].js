@@ -39,7 +39,7 @@ const ProductDetails = ({ product, products }) => {
                 className={
                   i === index ? "small-image selected-image" : "small-image"
                 }
-                onMouseEnter={() => setIndex(i)}
+                onMouseOver={() => setIndex(i)}
               />
             ))}
           </div>
@@ -89,7 +89,7 @@ const ProductDetails = ({ product, products }) => {
       <div className="maylike-products-wrapper">
         <h2>You may also like</h2>
         <div className="marquee">
-          <div className="maylike-products-container track">
+          <div className="maylike-products-container ">
             {products.map((item) => (
               <Product key={item._id} product={item} />
             ))}
