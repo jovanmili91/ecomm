@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <div className="navbar-container">
       <p className="logo">
-        <Link href="/">Najbolja prodavnica</Link>
+        <Link href="/">Vasa NAJ prodavnica</Link>
       </p>
       <button
         type="button"
