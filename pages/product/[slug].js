@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai";
 
 import { client, urlFor } from "../../lib/client";
-import { Product } from "../../components";
+import { ProductScroll } from "../../components";
 import { useStateContext } from "../../context/StateContext";
 
 const ProductDetails = ({ product, products }) => {
@@ -88,12 +88,11 @@ const ProductDetails = ({ product, products }) => {
 
       <div className="maylike-products-wrapper">
         <h2>You may also like</h2>
-        <div className="marquee">
-          <div className="maylike-products-container ">
-            {products.map((item) => (
-              <Product key={item._id} product={item} />
-            ))}
-          </div>
+
+        <div className="media-scroller">
+          {products.map((item) => (
+            <ProductScroll key={item._id} product={item} />
+          ))}
         </div>
       </div>
     </div>
